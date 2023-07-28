@@ -58,6 +58,9 @@ function listen()
 
     let clearBtn = document.querySelector(".clear");
     clearBtn.addEventListener('click', clearGrid)
+
+    let saveColor = document.querySelector(".save");
+    saveColor.addEventListener('click', pickColor);
 }
 
 function hover()
@@ -83,6 +86,33 @@ function clearGrid()
     {
         boxes[i].style.backgroundColor = "white";
     }
+}
+
+function pickColor()
+{
+    let r = document.getElementById('r').value;
+    let g = document.getElementById('g').value;
+    let b = document.getElementById('b').value;
+
+    if(isValid(r) && isValid(g) && isValid(b))
+    {
+        color[0] = r;
+        color[1] = g;
+        color[2] = b;
+
+        let colorDisplay = document.querySelector("#color-display");
+        colorDisplay.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+    }
+}
+
+function isValid(input)
+{
+    let parsed = parseInt(input);
+    if(typeof(parsed) === "number" && input >= 0 && input <= 255)
+    {
+        return true;
+    }
+    return false;
 }
 
 buildGrid();
