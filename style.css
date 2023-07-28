@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap');
+
+
+/* * {
+    border: red solid 1px;
+} */
+
+body {
+    margin: 0;
+    font-family: "Indie Flower", cursive;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: cornflowerblue;
+    font-size: 50px;
+}
+
+.grid {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    border: black solid 1px;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around
+}
+
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    height: 600px;
+    border: black solid 1px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 3px;;
+}
+
+.palette button {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: black solid 1px;
+    margin: 10px;
+    border-radius: 5px;;
+}
+
+#brown {
+    background-color:rgb(165, 42, 42);
+}
+
+#blue {
+    background-color:rgb(100, 149, 237);
+}
+
+#purple {
+    background-color:rgb(72, 61, 139);
+}
+
+#yellow {
+    background-color:rgb(255, 215, 0);
+}
+
+#green {
+    background-color:rgb(46, 139, 87);
+}
+
+#light-orange {
+    background-color:rgb(255, 99, 71);
+}
+
+#tan {
+    background-color:rgb(255, 160, 122);
+}
+
+#gray {
+    background-color:rgb(105, 105, 105);
+}
+
+#black {
+    background-color:rgb(0, 0, 0);
+}
+
+#white {
+    background-color:rgb(255, 255, 255);
+}
+
+#dark-blue {
+    background-color:rgb(25, 25, 112)
+}
+
+#pink {
+    background-color:rgb(255, 105, 180);
+}
+
+#red {
+    background-color:rgb(220, 20, 60);
+}
+
+#violet {
+    background-color:rgb(72, 61, 139);
+}
+
+#royal-blue {
+    background-color:rgb(65, 105, 225);
+}
+
+#orange {
+    background-color:rgb(255, 165, 0);
+}
+
+#teal {
+    background-color:rgb(0, 128, 128);
+}
+
+.clear {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.color-picker {
+    display: flex;
+    width: 150px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border: black solid 1px;
+    flex-direction: column;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    display: flex;
+    width: 30px;
+}
+
+.input-boxes {
+    display: flex;
+    justify-content: space-evenly;
+    width: 150px;
+}
